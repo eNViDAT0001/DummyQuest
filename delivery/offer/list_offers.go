@@ -6,6 +6,7 @@ import (
 	"DummyQuest/external/request"
 	"context"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func (h *offerHttpHandler) ListOffers() func(ctx *gin.Context) {
@@ -30,8 +31,9 @@ func (h *offerHttpHandler) ListOffers() func(ctx *gin.Context) {
 			cc.ResponseError(err)
 			return
 		}
+		result := io.ListOffersByUserCheckinRes{Offers: offers}
 
-		cc.Ok(offers)
+		cc.Response(http.StatusOK, result)
 	}
 
 }

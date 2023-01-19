@@ -32,8 +32,14 @@
 ```bash
 cd cmd
 ```
+
 ```bash
 go run .
+```
+
+- API GET 
+```
+localhost:8080/api/v1/offers/near_by?lat=2&lon=3&rad=4&checkin=2019-12-25
 ```
 
 

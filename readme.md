@@ -26,6 +26,15 @@
     ├───ascenda: Provider's name
     └───base_api: Provider APi convert
  ```
+## How to run
+- Install Golang: [Golang Dev](https://go.dev/doc/install)
+- Run these command
+```bash
+cd cmd
+```
+```bash
+go run .
+```
 
 
   

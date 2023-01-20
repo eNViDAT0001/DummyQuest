@@ -3,7 +3,7 @@
 - This project follow Clean Architecture. There are 3 main layer: Entities Layer, Usecase Layer and Presenter Layer
 - All layer will communicate to each other using interfaces -> Layer inside will not be coupled with ouside layer, easy to maintain and scale
 - Outside layers can communicate to inside layers and same level layers by implementing interface -> Resuable
-## Project Structure
+## Folder Structure
 ```
 ├─internal:
 │   └─offer: Domain's name
@@ -37,7 +37,7 @@ cd cmd
 go run .
 ```
 
-- API GET 
+- API GET List Offers
 ```
 http://localhost:8080/api/v1/offers/near_by?checkin=2019-12-25&lat=324324&lon=412&rad=20
 ```

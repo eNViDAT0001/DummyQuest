@@ -5,13 +5,11 @@
 - Outside layers can communicate to inside layers and same level layers by implementing interface -> Resuable
 ## Folder Structure
 ```
-├─internal:
+├───internal:
 │   └─offer: Domain's name
 │       └─io: Iomodel
-├───external:
-│   ├───common: Common Structs, Varibles stuffs
-├─cmd: Main package, where to run project
-├─delivery: Presenter Layer, communicate with Client-server or Front-end
+├───cmd: Main package, where to run project
+├───delivery: Presenter Layer, communicate with Client-server or Front-end
 │   └─offer: Domain's name
 │       └─io: Input-Output Model
 ├───external: Shared package, define logic which use by other's package

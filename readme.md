@@ -39,7 +39,7 @@ go run .
 
 - API GET 
 ```
-localhost:8080/api/v1/offers/near_by?lat=2&lon=3&rad=4&checkin=2019-12-25
+http://localhost:8080/api/v1/offers/near_by?checkin=2019-12-25&lat=324324&lon=412&rad=20
 ```
 
 

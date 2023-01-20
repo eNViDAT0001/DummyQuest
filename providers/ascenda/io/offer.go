@@ -4,7 +4,7 @@ import (
 	"DummyQuest/external/common"
 )
 
-type AscendaOfferReq struct {
+type AscendaOfferRes struct {
 	Offers []AscendaOffer `json:"offers"`
 }
 type AscendaOffer struct {

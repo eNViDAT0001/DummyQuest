@@ -35,7 +35,7 @@ func (p *ascendaProvider) ListOffers(latitude float32, longitude float32, radius
 		return nil, err
 	}
 	defer resp.Body.Close()
-	var result io.AscendaOfferReq
+	var result io.AscendaOfferRes
 	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
 		return nil, err
 	}
